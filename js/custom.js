@@ -1,51 +1,49 @@
-import './array/array.js'; // ARRAY
-
 //**** 9TH OCTOBER 2022, SUNDAY **** //
-function changeHead(id) {
-  id.innerHTML = 'sameet khatri';
-}
-function changeText(id) {
-  id.innerHTML = 'you clicked on me!';
-}
-var myptag = document.getElementById('myptag');
-myptag.style.color = 'red';
-myptag.style.backgroundColor = 'yellow';
-myptag.style.fontSize = '50px';
-myptag.style.fontFamily = 'Arial';
-myptag.style.fontWeight = '700';
-myptag.style.textAlign = 'center';
-myptag.style.padding = '20px';
-myptag.style.border = '2px solid red';
-myptag.style.borderRadius = '10px';
+// function changeHead(id) {
+//   id.innerHTML = 'sameet khatri';
+// }
+// function changeText(id) {
+//   id.innerHTML = 'you clicked on me!';
+// }
+// var myptag = document.getElementById('myptag');
+// myptag.style.color = 'red';
+// myptag.style.backgroundColor = 'yellow';
+// myptag.style.fontSize = '50px';
+// myptag.style.fontFamily = 'Arial';
+// myptag.style.fontWeight = '700';
+// myptag.style.textAlign = 'center';
+// myptag.style.padding = '20px';
+// myptag.style.border = '2px solid red';
+// myptag.style.borderRadius = '10px';
 
-function SubmitForm() {
-  var mytext1 = document.myform1.mytext1.value;
-  if (myform1.mytext1.value == ' ') {
-    alert('please enter your name');
-  } else if (myform1.mytext2.value == '') {
-    alert('please enter your password');
-  } else if (myform1.mytext2.value.length < 6) {
-    alert('please must be atleast of 6 characters');
-  } else if (
-    myform1.mytext2.value.includes(' ') ||
-    myform1.mytext2.value.includes('.')
-  )
-    alert('passsword cannot contain spaces or .');
-  else {
-    // alert('thank you for submitting the form')
-    document.write('thank you for submitting the form');
-  }
-  alert(mytext1);
-}
+// function SubmitForm() {
+//   var mytext1 = document.myform1.mytext1.value;
+//   if (myform1.mytext1.value == ' ') {
+//     alert('please enter your name');
+//   } else if (myform1.mytext2.value == '') {
+//     alert('please enter your password');
+//   } else if (myform1.mytext2.value.length < 6) {
+//     alert('please must be atleast of 6 characters');
+//   } else if (
+//     myform1.mytext2.value.includes(' ') ||
+//     myform1.mytext2.value.includes('.')
+//   )
+//     alert('passsword cannot contain spaces or .');
+//   else {
+//     // alert('thank you for submitting the form')
+//     document.write('thank you for submitting the form');
+//   }
+//   alert(mytext1);
+// }
 
-var myimage = document.getElementById('myimg');
-myimage.src =
-  'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg';
+// var myimage = document.getElementById('myimg');
+// myimage.src =
+//   'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg';
 
-function changeImg() {
-  myimage.src =
-    'https://img.freepik.com/free-photo/aesthetic-dark-wallpaper-background-neon-light_53876-128291.jpg?w=2000';
-}
+// function changeImg() {
+//   myimage.src =
+//     'https://img.freepik.com/free-photo/aesthetic-dark-wallpaper-background-neon-light_53876-128291.jpg?w=2000';
+// }
 // function firstLetterToUpperCase() {
 //   let str = 'how can mirrors be real if our eyes aren"t real';
 
@@ -2924,7 +2922,7 @@ function changeImg() {
 // appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 // Import stylesheets
-import './style.css';
+// import './style.css';
 
 //**** 28th September 2022 - Wednesday ****//
 // spread operator

@@ -3,7 +3,9 @@
 // let lastElement = arr.at(-1);
 // console.log(lastElement);
 
-var num = [1, 2, 3, 4];
+
+// const x = 10
+// var num = [1, 2, 3, 4];
 // console.log(num);
 // console.log(num.at(-1));
 // console.log(num.push(5));
@@ -30,9 +32,9 @@ var num = [1, 2, 3, 4];
 // console.log(x.sort(function(a,b) {return 0.5 - Math.random()}))
 
 //********* 17TH OCTOBER 2022, MONDAY *********//
-// Count by the properties of an array of objects
+// // Count by the properties of an array of objects
 
-// convert an array of objects to a single object
+// // convert an array of objects to a single object
 // const arr = [
 //   { id: '1', name: 'Alpha', gender: 'Male' },
 //   { id: '2', name: 'Bravo', gender: 'Male' },
@@ -42,18 +44,18 @@ var num = [1, 2, 3, 4];
 // console.log(arr.reduce((a, b) => ({ a, b }), {}));
 // console.log(Object.values(arr.map((item) => item)))
 
-// compare two arrays regardless of order
+// // compare two arrays regardless of order
 // const isEqual = (a, b) =>
 //   JSON.stringify([...new Set(a)].sort()) ===
 //   JSON.stringify([...new Set(b)].sort());
 // console.log(isEqual([1, 2, 3], [1, 2, 3]));
 
-// compare two arrays
+// // compare two arrays
 // const isEqual = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 // console.log(isEqual([1, 2, 3], [1, 2, 3]));
 // console.log(isEqual([1, 2, 3], [1, '2', 3]));
 
-// clone an array
+// // clone an array
 // const arr = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10];
 // console.log(arr.slice(0));
 // console.log([...arr]);
