@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Static webpage</title>
+	<link type="text/css" rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesehet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body onload="genCaptcha()">
+  <div class="wrapper">
+  <!-- START CAPTCHA -->
+  <input type="text" id="captcha">
+  <br/>
+  <button onclick="genCaptcha()">Refresh</button>
+  <!-- END CAPTCHA -->
+  <hr/>
+  <br/>
+
+
+  <p onmouseover="this.innerHTML = 'Mouse over'"  onmouseleave="this.innerHTML = 'Mouse left'">Mouse not over</p>
+  
+  <button onmousedown="this.innerHTML = 'Mouse Pressed'" onmouseup="this.innerHTML = 'Mouse Released'">click me</button>
+  <p class="myp"></p>
+  <p>click the button to display the date</p>
+  <p id="datehere"></p>
+  <button onclick="displayDate()">Click here 1</button>
+  <button id="myBtn">click here</button>
+  <h2 onclick="changeHead(this)">Click header title</h2>
+  <h1 onclick="changeText(this)">Click on this text!</h1>
+    <form name="myform1">
+    <input type="text" name="mytext1" placeholder="enter your name"/>
+    <button type="button" onclick="SubmitForm()">Submit</button>
+  </form>
+    <section class="carousel-section">
+  <div class="carousel-container">
+    <h2>Stage Padding OwlCarousel2</h2>
+    <div class="owl-carousel owl-theme">
+      <div class="carousel-item">
+        <div class="carousel-item__card">1</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">2</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">3</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">4</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">5</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">6</div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item__card">7</div>
+      </div>
+    </div>
+  </div>
+</section>
+    <ul class="list_unstyled">
+        <li>
+            
+            <label>
+                Men
+                <input type="radio" name="gender">
+                <span class="dot"></span>
+            </label>
+        </li>
+        <li>
+            
+            <label>
+                Women
+                <input type="radio" name="gender">
+                <span class="dot"></span>
+            </label>
+        </li>
+        <li>
+            
+            <label>
+                Option
+                <input type="radio" name="gender">
+                <span class="dot"></span>
+            </label>
+            
+        </li>
+    </ul>
+    <input type="text">
+    <br>
+    <input type="radio">
+    <br>
+    <input type="checkbox">
+    <br>
+    <input type="week">
+    <br>
+    <input type="date" name="">
+    <br>
+    <input type="search">
+    <br>
+    <input type="month">
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+	<ul class="list_items">
+		<li style="--nitesh:darkred;">
+			List item 1
+		</li>
+		<li style="--nitesh:gold;">
+			List item 2
+		</li>
+		<li style="--nitesh:lightgreen">
+			List item 3
+		</li>
+		<li style="--nitesh:powderblue;">
+			List item 4
+		</li>
+		<li style="--nitesh:cyan;">
+			List item 5
+		</li>
+	</ul>
+	<form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <div style="display: flex">
+        <div
+          class="colorSquare"
+          id="red"
+          style="height: 100px; width: 100px; background-color: red"
+        >
+          red
+        </div>
+        <div
+          class="colorSquare"
+          id="yellow"
+          style="height: 100px; width: 100px; background-color: yellow"
+        >
+          yellow
+        </div>
+        <div
+          class="colorSquare"
+          id="blue"
+          style="height: 100px; width: 100px; background-color: blue"
+        >
+          blue
+        </div>
+      </div>
+
+      </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="array/array.js"></script>
+    <script type="text/javascript">
+      // START CAPTCHA
+      var captcha;
+      function genCaptcha(){
+        captcha = Math.floor(Math.random() * 10000)
+        document.getElementById('captcha').value = captcha
+      }
+      // END CAPTCHA
+
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+    <script type="text/javascript">
+      console.log(document.querySelector('.myp').innerHTML)
+      function changeText1(){
+        document.querySelector('.myp').innerHTML = 'hello world'
+      }
+
+      document.getElementById('myBtn').onclick = displayDate;
+
+      function displayDate(){
+        document.getElementById('datehere').innerHTML = Date();
+      }
+      function changeHead(id){
+        id.innerHTML = 'sameet khatri'
+      }
+      function changeText(id) {
+        id.innerHTML = 'you clicked on me!';
+      }
+      function SubmitForm(){
+        var mytext1 = document.myform1.mytext1.value;
+        alert(mytext1)
+      }
+        // window.onload = function() {
+        //     document.getElementById('contact-form').addEventListener('submit', function(event) {
+        //         event.preventDefault();
+        //         // generate a five digit number for the contact_number variable
+        //         this.contact_number.value = Math.random() * 100000 | 0;
+        //         // these IDs from the previous steps
+        //         emailjs.sendForm('contact_service', 'contact_form', this)
+        //             .then(function() {
+        //                 console.log('SUCCESS!');
+        //             }, function(error) {
+        //                 console.log('FAILED...', error);
+        //             });
+        //     });
+        // }
+
+
+        // let redDiv = document.getElementById('red');
+        // let blueDiv = document.getElementById('blue');
+        // let yellowDiv = document.getElementById('yellow');
+        // const squares = document.querySelectorAll('.colorSquare');
+        // console.log(squares);
+        // console.log(squares[0].value);
+        // console.log(squares[1].value);
+        // console.log(squares[2].value);
+        // redDiv.onclick = () => console.log('red');
+        // yellowDiv.onclick = () => console.log('yellow');
+        // blueDiv.onclick = () => console.log('blue');
+
+        // // forEach
+        // const timesClicked = { red: 0, yellow: 0, green: 0 };
+        // console.log(timesClicked);
+
+        // squares.forEach(
+        //   (square) =>
+        //     (square.onclick = () => {
+        //       timesClicked[square.value] += 1;
+        //       square.innerText = timesClicked[square.value];
+        //     })
+        // );
+
+       $(document).ready(function(){
+        let slider = $('.owl-carousel');
+          slider.each(function () {
+            $(this).owlCarousel({
+              nav: true,
+              loop:false,
+              dots: false,
+              pagination: false,
+              margin: 25,
+              autoHeight: false,
+              stagePadding: 10,
+              responsive:{
+                0:{
+                  items: 1,
+                  stagePadding: 0,
+                  margin: 30,
+                },
+                767:{
+                  items: 3,
+                  stagePadding: 25,
+                },
+                1000:{
+                  items: 3,
+                }
+              }
+            });
+          });
+       });
+  
+    </script>
+</body>
+</html>
