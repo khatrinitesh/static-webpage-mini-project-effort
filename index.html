@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesehet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
-<body onload="genCaptcha()">
+<!-- <body onload="genCaptcha()"> -->
+<body>
   <div class="wrapper">
+    <div class="head">
+      <div class="head__eye head__eye--left">Left</div>
+      <div class="head__eye head__eye--right">Right</div>
+    </div>
+    
+    <span id="demo"></span>
+
+    <hr/>
+
+    <button onclick="jsonFetch()">json fetch</button>
   <!-- START CAPTCHA -->
   <input type="text" id="captcha">
   <br/>
@@ -162,15 +173,9 @@
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/array/array.js"></script>
-    <script type="text/javascript" src="js/object/object.js"></script>
-    <script type="text/javascript" src="js/error/error.js"></script>
-    <script type="text/javascript" src="js/iteration/iteration.js"></script>
-    <script type="text/javascript" src="js/navigator-interface-webapi/navigator-interface-webapi.js"></script>
-    <script type="text/javascript" src="js/json/json.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript">
       // START CAPTCHA
       var captcha;
@@ -184,28 +189,28 @@
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('YOUR_PUBLIC_KEY');
         })();
-    </script>
+    </script> -->
     <script type="text/javascript">
-      console.log(document.querySelector('.myp').innerHTML)
-      function changeText1(){
-        document.querySelector('.myp').innerHTML = 'hello world'
-      }
+      // console.log(document.querySelector('.myp').innerHTML)
+      // function changeText1(){
+      //   document.querySelector('.myp').innerHTML = 'hello world'
+      // }
 
-      document.getElementById('myBtn').onclick = displayDate;
+      // document.getElementById('myBtn').onclick = displayDate;
 
-      function displayDate(){
-        document.getElementById('datehere').innerHTML = Date();
-      }
-      function changeHead(id){
-        id.innerHTML = 'sameet khatri'
-      }
-      function changeText(id) {
-        id.innerHTML = 'you clicked on me!';
-      }
-      function SubmitForm(){
-        var mytext1 = document.myform1.mytext1.value;
-        alert(mytext1)
-      }
+      // function displayDate(){
+      //   document.getElementById('datehere').innerHTML = Date();
+      // }
+      // function changeHead(id){
+      //   id.innerHTML = 'sameet khatri'
+      // }
+      // function changeText(id) {
+      //   id.innerHTML = 'you clicked on me!';
+      // }
+      // function SubmitForm(){
+      //   var mytext1 = document.myform1.mytext1.value;
+      //   alert(mytext1)
+      // }
         // window.onload = function() {
         //     document.getElementById('contact-form').addEventListener('submit', function(event) {
         //         event.preventDefault();
@@ -246,35 +251,53 @@
         //     })
         // );
 
-       $(document).ready(function(){
-        let slider = $('.owl-carousel');
-          slider.each(function () {
-            $(this).owlCarousel({
-              nav: true,
-              loop:false,
-              dots: false,
-              pagination: false,
-              margin: 25,
-              autoHeight: false,
-              stagePadding: 10,
-              responsive:{
-                0:{
-                  items: 1,
-                  stagePadding: 0,
-                  margin: 30,
-                },
-                767:{
-                  items: 3,
-                  stagePadding: 25,
-                },
-                1000:{
-                  items: 3,
-                }
-              }
-            });
-          });
-       });
+       // $(document).ready(function(){
+       //  let slider = $('.owl-carousel');
+       //    slider.each(function () {
+       //      $(this).owlCarousel({
+       //        nav: true,
+       //        loop:false,
+       //        dots: false,
+       //        pagination: false,
+       //        margin: 25,
+       //        autoHeight: false,
+       //        stagePadding: 10,
+       //        responsive:{
+       //          0:{
+       //            items: 1,
+       //            stagePadding: 0,
+       //            margin: 30,
+       //          },
+       //          767:{
+       //            items: 3,
+       //            stagePadding: 25,
+       //          },
+       //          1000:{
+       //            items: 3,
+       //          }
+       //        }
+       //      });
+       //    });
+       // });
   
     </script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/array/array.js"></script>
+    <!-- <script type="text/javascript" src="js/object/object.js"></script> -->
+    <!-- <script type="text/javascript" src="js/error/error.js"></script> -->
+    <!-- <script type="text/javascript" src="js/iteration/iteration.js"></script> -->
+    <!-- <script type="text/javascript" src="js/navigator-interface-webapi/navigator-interface-webapi.js"></script> -->
+    <!-- <script type="text/javascript" src="js/json/json.js"></script> -->
+    <!-- <script type="text/javascript" src="js/fetchapi/fetchapi.js"></script> -->
+    <!-- <script type="text/javascript" src="js/functions/functions.js"></script> -->
+    <!-- <script type="text/javascript" src="js/spreadoperator/spreadoperator.js"></script>     -->
+    <!-- <script type="text/javascript" src="js/es6/es6.js"></script>     -->
+    <!-- <script type="text/javascript" src="js/consolestatement/consolestatement.js"></script>     -->
+
+
+
+
+    
 </body>
 </html>

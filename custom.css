@@ -21,6 +21,18 @@ body{
 	}
 }
 
+.head__eye{
+  background-color: pink;
+}
+
+.head__eye--left{
+  color: red;
+}
+.head__eye--right{
+  color: blue;
+  font-weight: 700;
+}
+
 .wrapper{
   padding: 20px 50px;
 }

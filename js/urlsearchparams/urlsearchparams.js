@@ -1,0 +1,10 @@
+let urlParams = new URLSearchParams(window.location.search)
+Object.fromEntries([...urlParams])
+urlParams.toString()
+urlParams.has('source')
+urlParams.get('source')
+urlParams.getAll('keywords')
+urlParams.append('source2','webdev')
+urlParams.set('topic','more dev')
+urlParams.delete('topic')
+window.location.search = urlParams.toString();

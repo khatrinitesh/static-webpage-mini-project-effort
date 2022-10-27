@@ -1,3 +1,11 @@
+// skip values in array destructing
+const colors = ['red','yellow','green','blue','brown']
+const [,,...remainingColors] = colors
+console.log(remainingColors)
+
+// const tech = ['C++','Java','JavaScript'];
+// console.log(tech.map(technology => technology.length))
+
 // The at() method for arrays can take both positive and negative integer values and returns the item at that index. The negative integers count back from the last item in the array, enabling negative indexing in JavaScript. This cool feature was introduced in ES2022.
 // let arr = [3, 4, 5, 6, 7];
 // let lastElement = arr.at(-1);

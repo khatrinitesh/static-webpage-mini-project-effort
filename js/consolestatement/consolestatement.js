@@ -1,0 +1,12 @@
+console.group('story 1 ')
+console.log('story created')
+console.log('story edited')
+console.log('story deleted')
+console.groupEnd()
+
+console.group('start')
+console.log('view')
+console.log('edit')
+console.log('delete')
+console.log('add')
+console.groupEnd('end')
