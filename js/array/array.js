@@ -1,3 +1,14 @@
+// const numbers = ['one','two','three','four']
+// const colors = ['red','green','yellow']
+// console.log(...numbers,...colors)
+// console.log(numbers.length)
+// console.log(colors.length)
+// const resultpop = numbers.pop()
+// console.log(resultpop)
+// const resultpush = numbers.push()
+// console.log(resultpush)
+
+
 // const arr = {
 // 	0:1,
 // 	1:2,
