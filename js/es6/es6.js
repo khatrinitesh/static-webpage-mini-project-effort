@@ -1,3 +1,86 @@
+// How to Find the majority element of an array JavaScript
+// const arr = [2,4,2,2,2,6,2,52]
+// const majEle = (arr) => {
+
+// }
+// function majEle(arr){
+// 	const threshold = Math.floor(arr.length / 2)
+// 	const map = {}
+
+// 	for (let i=0;i<arr.length;i++){
+// 		const value = arr[i]
+// 		map[value] = map[value] +1 || 1
+// 		if(map[value] > threshold){
+// 			return value
+// 		}
+// 	}
+// }
+// console.log(majEle(arr));
+
+// How to find second largest number in array in JavaScript
+// let arr = [1,10,2,9]
+// const result = function secondEl(arr){
+// 	let max = -1
+// 	let secMax = -1
+// 	arr.forEach((el) => {
+// 		if(el>max){
+// 			let temp = max;
+// 			max = el 
+// 			secMax = temp
+// 		}
+// 		else if(el > secMax){
+// 			secMax = el;
+// 		}
+// 	})
+// 	return secMax 
+// }
+// console.log(result([1,10,2,9]))
+
+// function findRunningFrequency(string) {
+
+// 	if(!string){
+// 		return string
+// 	}
+// 	let resultString = ''
+// 	let count = 1 
+
+// 	for(let i=1;i<=string.length;i++){
+// 		if(string[i] === string[i-1]){
+// 			count += 1;
+// 		}
+// 		else{
+// 			resultString += string[i-1]+count;
+// 			count  = 1 
+// 		}
+// 	}
+// 	return resultString
+// }
+// console.log(findRunningFrequency('111333227'))
+
+// let str = '1113333' = '1433'
+// console.log(str)
+
+//substring
+// const string1 = 'hi'
+// const string2 = 'all'
+// function findComString(str1,str2){
+// 	const stringmap = new Map()
+// 	for (let char of str1){
+// 		stringmap[char] = true
+// 	}
+
+// 	let resultString  = ''
+
+// 	for(let char of str2){
+// 		if(stringmap[char]){
+// 			resultString += char;
+// 		}
+// 	}
+// 	return resultString.length > 0 
+// }
+// console.log(findComString(string1,string2))
+// console.log(findComString(string1,string2));
+
 // speaking function - do you need to give voice to your app? here is the solution try it in the console.
 // function speak(message,language ='en-US'){
 // 	const msg  = new SpeechSynthesisUtterance(message);
