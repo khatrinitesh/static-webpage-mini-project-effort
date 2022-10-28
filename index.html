@@ -11,6 +11,12 @@
 <!-- <body onload="genCaptcha()"> -->
 <body>
   <div class="wrapper">
+
+    <input type="password" id='password'>
+    <br/>
+    <span id="password_msg" style="display:none;">Caps lock is on</span>
+    <hr/>
+    <br/>
     <div class="head">
       <div class="head__eye head__eye--left">Left</div>
       <div class="head__eye head__eye--right">Right</div>
@@ -30,6 +36,8 @@
   <br/>
 
 
+
+
   <p onmouseover="this.innerHTML = 'Mouse over'"  onmouseleave="this.innerHTML = 'Mouse left'">Mouse not over</p>
   
   <button onmousedown="this.innerHTML = 'Mouse Pressed'" onmouseup="this.innerHTML = 'Mouse Released'">click me</button>
@@ -39,7 +47,7 @@
   <button onclick="displayDate()">Click here 1</button>
   <button id="myBtn">click here</button>
   <h2 onclick="changeHead(this)">Click header title</h2>
-  <h1 onclick="changeText(this)">Click on this text!</h1>
+  <!-- <h1 onclick="changeText(this)">Click on this text!</h1> -->
     <form name="myform1">
     <input type="text" name="mytext1" placeholder="enter your name"/>
     <button type="button" onclick="SubmitForm()">Submit</button>
@@ -191,6 +199,12 @@
         })();
     </script> -->
     <script type="text/javascript">
+
+      const pwd = document.getElementById('password');
+      const pwd_msg = document.getElementById('password_msg');
+      pwd.addEventListener('keyup',function(){
+        pwd_msg.style.display = event.getModifierState('CapsLock') ? 'block' : 'none'
+      });
       // console.log(document.querySelector('.myp').innerHTML)
       // function changeText1(){
       //   document.querySelector('.myp').innerHTML = 'hello world'
@@ -283,21 +297,18 @@
     </script>
 
     <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/array/array.js"></script>
+    <!-- <script type="text/javascript" src="js/array/array.js"></script> -->
     <!-- <script type="text/javascript" src="js/object/object.js"></script> -->
     <!-- <script type="text/javascript" src="js/error/error.js"></script> -->
     <!-- <script type="text/javascript" src="js/iteration/iteration.js"></script> -->
     <!-- <script type="text/javascript" src="js/navigator-interface-webapi/navigator-interface-webapi.js"></script> -->
     <!-- <script type="text/javascript" src="js/json/json.js"></script> -->
-    <!-- <script type="text/javascript" src="js/fetchapi/fetchapi.js"></script> -->
+    <script type="text/javascript" src="js/fetchapi/fetchapi.js"></script>
     <!-- <script type="text/javascript" src="js/functions/functions.js"></script> -->
-    <!-- <script type="text/javascript" src="js/spreadoperator/spreadoperator.js"></script>     -->
+    <!-- <script type="text/javascript" src="js/spreadoperator/spreadoperator.js"></script>    --> 
     <!-- <script type="text/javascript" src="js/es6/es6.js"></script>     -->
     <!-- <script type="text/javascript" src="js/consolestatement/consolestatement.js"></script>     -->
-
-
-
-
+    <!-- <script type="text/javascript" src="js/arithmetic/arithmetic.js"></script> -->
     
 </body>
 </html>

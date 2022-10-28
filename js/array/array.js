@@ -1,7 +1,30 @@
+// const arr = {
+// 	0:1,
+// 	1:2,
+// 	2:"three",
+// 	3:4
+// }
+
+// console.log(arr)
+
+// const arr = [1,2,'three',4,5,true,false]
+// console.log(arr.at(-3))
+// console.log(arr.at(-1))
+// console.log(arr.at(0))
+// console.log(arr.at(2))
+// console.log(arr.at(7))
+
+// const str = 'this is string'
+// console.log(str.at(0))
+// console.log(str.at(-1))
+// console.log(arr[arr.length-1])
+// console.log(arr[0])
+// console.log(arr[-1])
+
 // skip values in array destructing
-const colors = ['red','yellow','green','blue','brown']
-const [,,...remainingColors] = colors
-console.log(remainingColors)
+// const colors = ['red','yellow','green','blue','brown']
+// const [,,...remainingColors] = colors
+// console.log(remainingColors)
 
 // const tech = ['C++','Java','JavaScript'];
 // console.log(tech.map(technology => technology.length))

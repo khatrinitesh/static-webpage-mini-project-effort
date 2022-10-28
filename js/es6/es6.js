@@ -146,6 +146,14 @@
 // console.log(x)
 
 // CLASS example 
+// class Person{
+// 	constructor(name){
+// 		this.name = name
+// 	}
+// }
+
+// const member = new Person('nitesh')
+// console.log(typeof member)
 // class UserProfile{
 // 	constructor(fname,lname){
 // 		this.fname = fname
