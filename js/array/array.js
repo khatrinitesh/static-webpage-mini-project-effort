@@ -1,3 +1,35 @@
+// How to Find the length of longest substring JavaScript
+// let string = 'nitesh'
+// function lengthExample(string){
+// 	let max = 0,current_string = '',char,pos;
+// 	for(let i=0;i<string.length;i++){
+// 		char = string.charAt(i)
+// 		pos = current_string.indexOf(char)
+// 		if(!pos == -1){
+// 			current_string = current_string.substr(pos+1)
+// 		}
+// 		current_string += char;
+// 		max = Math.max(max,current_string.length)
+// 	}
+// 	return max
+// }
+// console.log(lengthExample('nitesh'))
+
+
+// // Write A Javascript Program for Largest Sum Contiguous Subarra
+// function getMaxSum(arr){
+// 	let maxSum = arr[0]
+// 	let currSum = 0;
+// 	for (let item of arr){
+// 		currSum += item;
+// 		maxSum = Math.max(maxSum,currSum)
+// 		if(currSum < 0) currSum = 0
+// 	}
+
+// return maxSum
+// }
+// console.log(getMaxSum([100,230,30,-3.5,-9,2]))
+
 // const numbers = ['one','two','three','four']
 // const colors = ['red','green','yellow']
 // console.log(...numbers,...colors)
