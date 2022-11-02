@@ -1,3 +1,16 @@
+// JavaScript reduce() Method | For Beginners
+// const array1 = [10,20,30,40]
+// console.log(array1)
+
+// const initialValue = 0
+// console.log(initialValue)
+
+// const suminitialValue = array1.reduce((prevVal,currVal,currIndex,array1) => {
+// 	console.log({currIndex,prevVal,currVal});
+// 	return prevVal + currVal;
+// },initialValue)
+// console.log(suminitialValue)
+
 // How to Find the length of longest substring JavaScript
 // let string = 'nitesh'
 // function lengthExample(string){
