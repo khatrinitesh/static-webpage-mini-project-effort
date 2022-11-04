@@ -12,7 +12,44 @@
 <!-- <body onload="genCaptcha()"> -->
 
 <body>
-    <div class="wrapper">
+  <div id="app">
+      <header class="header">
+        <h1>Employee Database Management</h1>
+        <button class="createEmployee">Add Employee</button>
+      </header>
+
+      <div class="employees">
+        <div class="employees__names">
+          <span class="employees__names--title">Employee List</span>
+          <div class="employees__names--list"></div>
+        </div>
+        <div class="employees__single">
+          <div class="employees__single--title">Employee Information</div>
+          <div class="employees__single--info"></div>
+        </div>
+      </div>
+
+      <!-- Add Employee Code - START -->
+      <div class="addEmployee">
+        <form class="addEmployee_create">
+          Add a new Employee
+          <div>
+            <input type="text" name="firstName" placeholder="First Name" required/>
+            <input type="text" name="lastName" placeholder="Last Name" required/>
+          </div>
+          <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+          <input type="email" name="email" placeholder="Email" required/>
+          <input type="number" name="contactNumber" placeholder="Contact" required/>
+          <input type="number" name="salary" placeholder="Salary" required/>
+          <input type="text" name="address" placeholder="Address" required/>
+          <input type="date" name="dob" placeholder="Date of Birth" class="addEmployee_create--dob" required/>
+          <input type="submit" class="addEmployee_create--submit" value="Submit">
+        </form>
+      </div>
+      <!-- Add Employee Code - END -->
+    </div>
+    
+    <!-- <div class="wrapper">
         <i id="left" class="fa-solid fa-angle-left" style="display: block;"></i>
         <div class="carousel">
             <img src="https://codingnepalweb.com/demos/draggable-image-slider-javascript/images/img-1.jpg" alt="img" draggable="false">
@@ -26,7 +63,7 @@
             <img src="https://codingnepalweb.com/demos/draggable-image-slider-javascript/images/img-9.jpg" alt="img" draggable="false">
         </div>
         <i id="right" class="fa-solid fa-angle-right" style="display: block;"></i>
-    </div>
+    </div> -->
     <div class="wrapper">
        <!--  <div class="loading_block">
             <span>L</span>
@@ -302,7 +339,8 @@
     <!-- <script type="text/javascript" src="js/consolestatement/consolestatement.js"></script>     -->
     <!-- <script type="text/javascript" src="js/arithmetic/arithmetic.js"></script> -->
     <!-- <script type="text/javascript" src="js/closures/closures.js"></script>   -->
-    <script type="text/javascript" src="js/repository/slider/slider1.js"></script>
+    <!-- <script type="text/javascript" src="js/repository/slider/slider1.js"></script> -->
+    <script type="text/javascript" src="js/crud/crud.js"></script>
 </body>
 
 </html>
