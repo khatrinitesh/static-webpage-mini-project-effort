@@ -14,19 +14,32 @@
             background: #000;
             color: #fff;
         }
+
+        h2{
+            break-before: page;
+        }
+
+        #box_content{
+            break-before: page;
+            break-after: avoid;
+        }
     </style>
 </head>
 <!-- <body onload="genCaptcha()"> -->
 
 <body>
 
+    <h2>Heading title</h2>  
+
     <!-- <input type='text' id="fieldinput" />
     <button id="btn">Click</button> -->
 
-    <button class="black red" onclick="red()">red</button>
-    <button class="black green" onclick="green()">green</button>
-    <button class="black blue" onclick="blue()">blue</button>
-    <button class="black" onclick="reset()">reset</button>
+    <div id="box_content">
+        <button class="black red" onclick="red()">red</button>
+        <button class="black green" onclick="green()">green</button>
+        <button class="black blue" onclick="blue()">blue</button>
+        <button class="black" onclick="reset()">reset</button>
+    </div>
 
    <!--  <h1>Heading nitesh</h1>
     <h1>Heading sameet</h1>
@@ -389,7 +402,8 @@
     <!-- <script type="text/javascript" src="js/getElementById/getElementById.js"></script> -->
     <!-- <script type="text/javascript" src="js/getElemetsByName/getElemetsByName.js"></script> -->
     <!-- <script type="text/javascript" src="js/getElementsByTagName/getElementsByTagName.js"></script> -->
-    <script type="text/javascript" src="js/getElementsByClassName/getElementsByClassName.js"></script>
+    <!-- <script type="text/javascript" src="js/getElementsByClassName/getElementsByClassName.js"></script> -->
+    <script type="text/javascript" src="js/json/app.js"></script>
     
     
 </body>
