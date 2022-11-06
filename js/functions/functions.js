@@ -1,3 +1,11 @@
+function functionName(){
+	document.write('briyani')
+	var a = 'briyani'
+	document.write('<br>')
+	document.write('I love ' + " " + a)
+}
+functionName()
+
 function print(){
 	name = 'nitesh khatri'
 	console.log(name)

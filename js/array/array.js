@@ -1,3 +1,18 @@
+// arrays 
+var group = ['diesel','filter','speaker','car']
+// var a = 5 
+// var a = 10
+// document.write(a)
+// document.write('<br>')
+// document.write(group)
+// document.write('<br>')
+// console.log(size)
+document.write(group[1])
+var size = group.length
+for(i=0;i<size;i++){
+	console.log(i)
+}
+
 // JavaScript reduce() Method | For Beginners
 // const array1 = [10,20,30,40]
 // console.log(array1)
