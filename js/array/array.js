@@ -1,5 +1,11 @@
+// What is difference between Sparse Array and Dense Array in JavaScript|JavaScript Interview Questions
+// let arr = [1,2,,5]
+// arr.forEach((example) => {
+// 	console.log(example)
+// })
+
 // arrays 
-var group = ['diesel','filter','speaker','car']
+// var group = ['diesel','filter','speaker','car']
 // var a = 5 
 // var a = 10
 // document.write(a)
@@ -7,11 +13,11 @@ var group = ['diesel','filter','speaker','car']
 // document.write(group)
 // document.write('<br>')
 // console.log(size)
-document.write(group[1])
-var size = group.length
-for(i=0;i<size;i++){
-	console.log(i)
-}
+// document.write(group[1])
+// var size = group.length
+// for(i=0;i<size;i++){
+// 	console.log(i)
+// }
 
 // JavaScript reduce() Method | For Beginners
 // const array1 = [10,20,30,40]

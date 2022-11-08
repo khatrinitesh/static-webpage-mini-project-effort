@@ -1,11 +1,11 @@
-let student = {
-	name:"nitesh",
-	age:33,
-	city:"Mumbai"
-}
+// let student = {
+// 	name:"nitesh",
+// 	age:33,
+// 	city:"Mumbai"
+// }
 
-let JData = (JSON.stringify(student))
-console.log(JData)
+// let JData = (JSON.stringify(student))
+// console.log(JData)
 
 // let data = `{
 // 	"name":"nitesh",
