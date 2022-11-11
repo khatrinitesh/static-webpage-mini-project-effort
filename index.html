@@ -23,24 +23,32 @@
             break-before: page;
             break-after: avoid;
         }
+
+        :where(.heading,.body,.footer){
+            page-break-before: always;
+        }
     </style>
 </head>
 <!-- <body onload="genCaptcha()"> -->
 
 <body>
 
-    <h2>Heading title</h2>  
+    <div class="heading">heading</div>
+    <div class="body">body</div>
+    <div class="footer">footer</div>
+
+    <!-- <h2>Heading title</h2>   -->
 
     <!-- <input type='text' id="fieldinput" />
     <button id="btn">Click</button> -->
 
-    <div id="box_content">
+   <!--  <div id="box_content">
         <button class="black red" onclick="red()">red</button>
         <button class="black green" onclick="green()">green</button>
         <button class="black blue" onclick="blue()">blue</button>
         <button class="black" onclick="reset()">reset</button>
     </div>
-
+ -->
    <!--  <h1>Heading nitesh</h1>
     <h1>Heading sameet</h1>
     <h1>Heading manisha</h1>
