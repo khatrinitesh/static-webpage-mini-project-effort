@@ -1,3 +1,20 @@
+
+// JavaScript Array Methods: map() and forEach()
+// const studentsNames = ['UTTAM','MANANA','VIRAJ']
+// studentsNames.map(name => console.log(name.toLowerCase()))
+
+// const numbers = [1,4,9,625]
+// const mathresult = numbers.map((item) => Math.sqrt(item));
+// console.log(mathresult)
+
+// const pets = ['dog','cat','fish']
+// const petsresult = pets.map(pet => pet.toUpperCase())
+// console.log(petsresult)
+
+// const array1 = [1,4,9,16]
+// const arrayresult = array1.map(item => item + 2)
+// console.log(arrayresult);
+
 // What is difference between Sparse Array and Dense Array in JavaScript|JavaScript Interview Questions
 // let arr = [1,2,,5]
 // arr.forEach((example) => {
