@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 // JavaScript Array Methods: map() and forEach()
 // const studentsNames = ['UTTAM','MANANA','VIRAJ']
@@ -15,7 +15,7 @@
 // const array1 = [1,4,9,16]
 // const arrayresult = array1.map(item => item + 2)
 // console.log(arrayresult);
-=======
+
 // array 12112022 01 - Polyfill for Filter Method in JavaScript | Interview Question
 // const originalArray = [0,1,2,3,4,5,6,7,8,9]
 // const newArray = originalArray.filter((item,index,array) => item % 2 === 0);
@@ -38,7 +38,7 @@ const resultarrData = arrData.myFilter(function(item,index,array){
     return item % 2 === 0;
 })
 console.log(resultarrData)
->>>>>>> c57e2177baf725dc90865433edd85af430d118b1
+
 
 // What is difference between Sparse Array and Dense Array in JavaScript|JavaScript Interview Questions
 // let arr = [1,2,,5]
