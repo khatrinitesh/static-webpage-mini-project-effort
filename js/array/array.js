@@ -1,4 +1,7 @@
-
+// JAVASCRIPT ARRAY METHOS: we can easily create a copy of an array using the slice() method which returns a shallow copy of a portion of the array. The second argument which is the end index of the element is exclusive.
+const colors = ['red','orange','green','purple','pink','red']
+const newColors = [...colors.slice(0,4)]
+console.log(newColors)
 
 // JavaScript Array Methods: map() and forEach()
 // const studentsNames = ['UTTAM','MANANA','VIRAJ']

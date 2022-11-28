@@ -1,23 +1,23 @@
 // dsa with js => bubble recursive sort
-let arr = [64, 34, 25, 12];
-function recursiveBubbleSort(data,count){
-	if(count == 1){
-		return;
-	}
-	let currentEl = 0;
+// let arr = [64, 34, 25, 12];
+// function recursiveBubbleSort(data,count){
+// 	if(count == 1){
+// 		return;
+// 	}
+// 	let currentEl = 0;
 
-	for(let i=0;i<count;i++){
-		if(data[i] > data[i]){
-			let temp = data[i];
-			data[i] = data[i  + 1]
-			data[i + 1] = temp;
-			currentEl++
-		}
-	}
-	recursiveBubbleSort(data,count-1)
-}
-recursiveBubbleSort(arr,arr.length)
-console.warn(arr)
+// 	for(let i=0;i<count;i++){
+// 		if(data[i] > data[i]){
+// 			let temp = data[i];
+// 			data[i] = data[i  + 1]
+// 			data[i + 1] = temp;
+// 			currentEl++
+// 		}
+// 	}
+// 	recursiveBubbleSort(data,count-1)
+// }
+// recursiveBubbleSort(arr,arr.length)
+// console.warn(arr)
 // dsa with js => binary search tree 
 // class Node {
 //     constructor(val) {
