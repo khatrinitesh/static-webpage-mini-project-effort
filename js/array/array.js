@@ -1,7 +1,81 @@
+// JAVSCRIPT ARRAY METHODS :In JavaScript, we can easily create a copy of an array using the slice() method which returns a shallow copy of a portion of the array. The second argument which is the end index of the element is exclusive.
+// let colors = ['red','blue','green','coral','magenta','black']
+// let newColors = [...colors.slice(0,3)]
+// console.log(newColors);
+
+// JAVSCRIPT ARRAY METHODS : In JavaScript, we can easily iterate through an array using for loop statement. At first, I created a clone of the original array and then iterated through the cloned array.
+// const heroes = [
+//     {
+//         name:'shadow',type:'agility',difficultyLevel:'normal'
+//     },
+//     {
+//         name:'invoker',type:'intellgience',difficultyLevel:'hard'
+//     },
+//     {
+//         name:'pudge',type:'strength',difficultyLevel:'medium'
+//     },
+// ]
+// const heroDeepCopy = JSON.parse(JSON.stringify(heroes))
+// for(let i=0;i<heroDeepCopy.length;i++){
+//     if(heroDeepCopy[i].name === 'invoker'){
+//         heroDeepCopy[i].name= 'nitesh'
+//     }
+//     console.log(heroDeepCopy[i])
+// }
+// console.log(heroes) // original
+// console.log(heroDeepCopy) // modified
+
+// JAVSCRIPT ARRAY METHODS :3 WAYS TO MERGE ARRAYS IN JAVASCRIPT ✨In these slides, I share 3 ways on how you can combine multiple arrays together which are the Spread operator, Array.concat and Array.push
+// const array1 = [1,2,3]
+// const array2 = [4,5,6]
+// const merged = [...array1,...array2]
+// console.log(merged)
+// console.log(array1.concat(array2))
+// array1.push(...array2)
+// console.log(array1 )
+
+
+// JAVSCRIPT ARRAY METHODS :
+// let arr = [1,2,3]
+// console.log(arr.forEach(el => el*2))
+// console.log(arr.map(el => el*2))
+
+// JAVSCRIPT ARRAY METHODS : Another way to iterate over arrays is to use Array.prototype.forEach() method which is a functional way of achieving iteration. Important tips to consider are that the forEach method does not have a return value so it cannot be chained as well as we cannot break the forEach method like normal for loops.
+// const heroes = [
+//     {
+//         name:'shadow',type:'agility',difficultyLevel:'normal'
+//     },
+//     {
+//         name:'invoker',type:'intellgience',difficultyLevel:'hard'
+//     },
+//     {
+//         name:'pudge',type:'strength',difficultyLevel:'medium'
+//     },
+// ]
+// const heroesresult = heroes.forEach((item) => console.log(`${item.name} - ${item.type} - ${item.difficultyLevel}`))
+
+// JAVSCRIPT ARRAY METHODS : One common way to iterate over an array and update its elements is by using the Array.prototype.map() method which simply receives a callback function and based on that callback we can transform array elements to something else.
+// const foods = [
+//     {id:'hamburger',name:'Hamburger',price:300},
+//     {id:'french',name:'french fries',price:1000},
+//     {id:'cold',name:'cold drink',price:20500},
+// ]
+// const mappedFoods = foods.map((food,index) => {
+//     if(food.id === 'french'){
+//         return{
+//             ...food,price:food.price * 2
+//         }
+//     }
+
+//     return food;
+// })
+// console.log(mappedFoods)
+// console.log(foods)
+// console.log(foods)
 // JAVASCRIPT ARRAY METHOS: we can easily create a copy of an array using the slice() method which returns a shallow copy of a portion of the array. The second argument which is the end index of the element is exclusive.
-const colors = ['red','orange','green','purple','pink','red']
-const newColors = [...colors.slice(0,4)]
-console.log(newColors)
+// const colors = ['red','orange','green','purple','pink','red']
+// const newColors = [...colors.slice(0,4)]
+// console.log(newColors)
 
 // JavaScript Array Methods: map() and forEach()
 // const studentsNames = ['UTTAM','MANANA','VIRAJ']

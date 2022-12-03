@@ -1,4 +1,36 @@
+// OBJECT 4 
+// function Car(make,model,year){
+//     this.make = make;
+//     this.model = model;
+//     this.year =year;
 
+//     this.setMiles = function(miles){
+//         this.miles = miles
+//         return miles;
+//     }
+// }
+
+// const car1 = new Car('toyota','parius',2016);
+// const car2 = new Car('suzuki','parius1',2020);
+
+// Car.prototype.age = function(){
+//     return (new Date().getFullYear()) - this.year;
+// }
+
+// car1.age();
+
+
+
+// OBJECT 3
+// const user = {
+//     name:'nitesh',
+//     yearOfBirth:1989,
+//     calcAge:function(){
+//         const currentYear = (new Date()).getFullYear()
+//         return currentYear - this.yearOfBirth;
+//     }
+// }
+// console.log(user.calcAge());
 /*OBJECT 2*/
 // var bike = {
 //   name:'RX100',
