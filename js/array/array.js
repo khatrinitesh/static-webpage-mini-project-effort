@@ -1,3 +1,8 @@
+// JAVASCRIPT ARRAY METHODS: 
+// const numbers = [33,2,8];
+// numbers.sort();
+// console.log(numbers[1]);
+
 // JAVSCRIPT ARRAY METHODS :In JavaScript, we can easily create a copy of an array using the slice() method which returns a shallow copy of a portion of the array. The second argument which is the end index of the element is exclusive.
 // let colors = ['red','blue','green','coral','magenta','black']
 // let newColors = [...colors.slice(0,3)]

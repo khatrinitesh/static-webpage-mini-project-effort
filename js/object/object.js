@@ -1,3 +1,19 @@
+// OBJECT 5 
+// let hero = {
+//     powerLevel:99,
+//     getPower(){
+//         return this.powerLevel;
+//     }
+// }
+// let getPower = hero.getPower;
+
+// let hero2 = {
+//     powerLevel:42
+// }
+// console.log(getPower());
+// console.log(getPower.apply(hero));
+// console.log(getPower.apply(hero2));
+
 // OBJECT 4 
 // function Car(make,model,year){
 //     this.make = make;

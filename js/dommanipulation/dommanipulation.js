@@ -1,8 +1,25 @@
-const btn  = document.querySelector('.btn')
-btn.addEventListener("click", function() {
-  document.body.style.backgroundColor = 'red';
-  console.log('hi')
-});
+// Did you know you can create a context menu (aka right-click menu) with `oncontextmenu` event listener The code bellow will fire an alert on right click Find in the comments links for ways to create a new context menu and replace the browser's default one easily!
+function handleAlert(){
+    alert('you right clicked');
+}
+
+// let btn = document.querySelector('#btn');
+// if(btn){
+//   let disabled = btn.hasAttribute('disabled');
+//   console.log(disabled)
+// }
+// let fieldInput = document.querySelector('#fiedinput');
+// if(fieldInput){
+//   let readonly = fieldInput.hasAttribute('readonly');
+//   console.log(readonly)
+// }
+
+
+// const btn  = document.querySelector('.btn')
+// btn.addEventListener("click", function() {
+//   document.body.style.backgroundColor = 'red';
+//   console.log('hi')
+// });
 
 // const url = 'https://api.wheretheiss.at/v1/satellites/25544'
 // async function getISS(){
