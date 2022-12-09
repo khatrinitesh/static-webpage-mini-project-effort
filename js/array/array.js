@@ -1,3 +1,8 @@
+// JAVSACRIPT ARRAY METHODS: 
+// const numbers = [10,20,30,40,50];
+// const greatThan25 = numbers.find(num => num > 25)
+// console.log(greatThan25)
+
 // JAVASCRIPT ARRAY METHODS: 
 // const numbers = [33,2,8];
 // numbers.sort();

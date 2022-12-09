@@ -1,3 +1,49 @@
+.bg{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255);
+  transition: .5s ;
+}
+
+.square{
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, .2) 0 60px 40px -7px;
+}
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+}
+
+.gold{
+  background-color: gold;
+}
+
+.red:hover ~ .bg{
+  background-color: red;
+}
+
+.green:hover ~ .bg{
+  background-color: green;
+}
+
+.blue:hover ~ .bg{
+  background-color: blue;
+}
+
+.gold:hover ~ .bg{
+  background-color: gold;
+}
+
 /**{
 	margin: 0;
 	padding: 0;
