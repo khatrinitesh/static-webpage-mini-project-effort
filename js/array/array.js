@@ -1,4 +1,36 @@
 // JAVSACRIPT ARRAY METHODS: 
+const myArray = ['tiger','lion','elephant','giraffee','fish','fish','dog','tiger']
+// console.log([...new Set(myArray)])
+const res = myArray.filter(function(item,index,arr) {
+	arr.indexOf(item) === index;
+});	
+// console.log(Array.from(new Set(myArray)));
+// console.log([...new Set(myArray)])
+
+// JAVSACRIPT ARRAY METHODS: 
+// const array = ['pranay',null,'tiger',0,'','hamburger']
+
+// const res = array.filter(function(item){
+// 	return Boolean(item) || item === 0 || item === null
+// })
+// console.log(array)
+// console.log(res);
+
+// JAVSACRIPT ARRAY METHODS: 
+// const array = [
+//  {name:"a",id:'1'},
+//  {name:'b',id:'2',f:function(){2+2}},
+//  {name:'c',id:'1'},
+//  {name:'d',id:'2',f:function(){2+3}}
+// ]
+// const res = array.filter(function(item,index){
+// 	return index === array.findIndex(function(obj){
+// 		return item.id === obj.id;
+// 	})
+// });
+// console.log(res);
+
+// JAVSACRIPT ARRAY METHODS: 
 // const numbers = [10,20,30,40,50];
 // const greatThan25 = numbers.find(num => num > 25)
 // console.log(greatThan25)

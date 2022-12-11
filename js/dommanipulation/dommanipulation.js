@@ -1,7 +1,95 @@
-// Did you know you can create a context menu (aka right-click menu) with `oncontextmenu` event listener The code bellow will fire an alert on right click Find in the comments links for ways to create a new context menu and replace the browser's default one easily!
-function handleAlert(){
-    alert('you right clicked');
+
+// get checkbox values with vanilla js
+// const form = document.querySelector('form');
+// form.addEventListener('submit',(e) => {
+// 	e.preventDefault();
+// 	let skills = {};
+// 	document.querySelectorAll('[type="checkbox"]').forEach(item => {
+// 		if(item.checked === true){
+// 			skills[item.value] = true;
+// 		}
+// 		else if(item.checked === false){
+// 			skills[item.value] = false;
+// 		}
+// 	})
+
+// 	console.log(Object.entries(skills))
+// })
+
+// random image with vanilla js 
+const imgEl = document.getElementById('random-image');
+
+const srcArray = ['https://via.placeholder.com/550x150', 'https://via.placeholder.com/350x250', 'https://via.placeholder.com/350x650', 'https://via.placeholder.com/500x150'];
+// Stores path to images in an array
+
+imgEl.addEventListener('click', () => {
+    randomImage();
+    // Runs randomImage function when user clicks on image
+});
+
+let index;
+// Current image index
+
+randomImage();
+function randomImage() {
+
+    const randomIndex = Math.floor(Math.random()*srcArray.length);
+    // Generates random number between 0 and array length-1 (because Math.floor rounds)
+
+    if (randomIndex !== index) {
+    // If number NOT same as current image index...
+
+        imgEl.src = srcArray[randomIndex];
+        //...set as image src
+
+        index = randomIndex;
+        //...and as new current index value
+
+    } else {
+    // If number same as current index value (repeat)...
+
+        randomImage();
+        //...start function from beginning again
+
+    }
+
 }
+
+// let Index;
+
+
+// randomImage();
+// function randomImage(){
+// 	const randomIndex = Math.floor(Math.random() * srcArray.length);
+
+// 	if(randomIndex !== Number(localStorage.getItem('index'))){
+// 		img1.src = srcArray[randomIndex];
+// 		localStorage.setItem('index',randomIndex)
+// 	}
+// 	else{
+// 		localStorage.setItem
+// 	}
+// }
+
+// is it safe to use innerHTML 
+// const profile = document.getElementById('user_profile');
+// const name = 'nitesh khatri';
+// const bio = 'you may know me from my popular 1987 hit "never gonna to give you up"'
+
+// const imges = `<img src="img/wallpaper.jpg"/>`
+// const markup = `<h2>${name}</h2><p>${bio}</p>${imges}`
+// profile.innerHTML = markup;
+
+// const h2 = document.createElement('h2');
+// h2.textContent = name;
+// const p = document.createElement('p');
+// p.innerText = bio
+// profile.appendChild(p)
+
+// // Did you know you can create a context menu (aka right-click menu) with `oncontextmenu` event listener The code bellow will fire an alert on right click Find in the comments links for ways to create a new context menu and replace the browser's default one easily!
+// function handleAlert(){
+//     alert('you right clicked');
+// }
 
 // let btn = document.querySelector('#btn');
 // if(btn){
