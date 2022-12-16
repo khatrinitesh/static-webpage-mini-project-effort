@@ -1,4 +1,27 @@
 // JAVSACRIPT ARRAY METHODS: 
+// const months = ['january','february','march','april']
+// const num = [10,5,100,53,6]
+// const students = [
+//  {name:'nitesh',age:33},
+//  {name:'arvind',age:67},
+//  {name:'urvashi',age:64},
+// ]
+// console.log(months)
+// console.log(months.sort());
+// console.log(num)
+// const numsort = num.sort((a,b) => b-a)
+// console.log(numsort);
+// console.log(students)
+// const objectsort = students.sort((a,b) => a.age - b.age)
+// const objectsortname = students.sort((a,b) => {
+// 	if(a.name > b.name) return - 1
+// 	return 1;
+// })
+// console.log(objectsortname);
+// console.log(months.includes('january'))
+// console.log(objectsort)
+
+// JAVSACRIPT ARRAY METHODS: 
 const myArray = ['tiger','lion','elephant','giraffee','fish','fish','dog','tiger']
 // console.log([...new Set(myArray)])
 const res = myArray.filter(function(item,index,arr) {
