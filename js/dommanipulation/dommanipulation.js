@@ -1,3 +1,45 @@
+// Below sharing the code to check empty data in javascript which will handle all the datatype values including null, undefined, and NaN. ⚡Code 🎯: 𝐜𝐨𝐧𝐬𝐭 𝐈𝐬𝐄𝐦𝐩𝐭𝐲 = (𝐝𝐚𝐭𝐚) => 𝐭𝐲𝐩𝐞𝐨𝐟 𝐝𝐚𝐭𝐚 === '𝐨𝐛𝐣𝐞𝐜𝐭' ? 𝐎𝐛𝐣𝐞𝐜𝐭.𝐤𝐞𝐲𝐬(𝐝𝐚𝐭𝐚 || {}).𝐥𝐞𝐧𝐠𝐭𝐡 == 𝟎 : !𝐁𝐨𝐨𝐥𝐞𝐚𝐧(𝐝𝐚𝐭𝐚); this post for future reference please do like Comment and share it with your friends to help them with knowlegeable content
+// const isEmpty = (data) => typeof data === 'object' ? Object.keys(data || {}).length == 0 : !Boolean(data);
+// console.log(isEmpty([]));
+// console.log(isEmpty({}));
+// console.log(isEmpty(""));
+// console.log(isEmpty(null));
+// console.log(isEmpty(undefined));
+// console.log(isEmpty(NaN));
+// console.log(isEmpty(0));
+// console.log(isEmpty(2));
+// console.log(isEmpty('hello'));
+
+// avoid errors when accessing properties of null values
+// const share = undefined
+// // console.log(share.done);   // throws an error 
+// console.log(share?.done);  // undefined
+
+// convert anything into boolean
+// console.log(!!0);
+// console.log(!!'follow me');
+// console.log(!!" ");
+// console.log(!!NaN);
+// console.log(!!10);
+
+// pass infinite parameters to a function
+// function Saved(...args){
+//     console.log(args)
+// }
+// Saved('like','follow');
+
+// determine if a functions or constructor was called using new
+// function like(){
+//     if(new.target){
+//         console.log('i wasnt called using new')
+//     }
+//     else{
+//         console.log('i wasnt cancelled using new')
+//     }
+// }
+// new like();
+// like();
+
 
 // get checkbox values with vanilla js
 // const form = document.querySelector('form');

@@ -1,3 +1,65 @@
+// JAVSACRIPT ARRAY METHODS: Top 10 JavaScript Array methods Cheatsheet 
+// pop : this method removes the last element from an array and returns that element
+// let cities = ['delhi','lucknow','banglore','mumbai']
+// let removeCity = cities.pop();
+// console.log(removeCity);
+
+// push : this method adds zero or more elements to the ends of the array.
+// let cities = ['delhi','lucknow','banglore','mumbai']
+// cities.push('goa')
+// console.log(cities);
+
+// reduce : this method executes a reducer function on each element of the array and returns a single output value 
+// const numbers = [20,10,18,22]
+// const reducenum = numbers.reduce((a,b) => a +b ,0)
+// console.log(reducenum)
+
+// filter : this method return a new array with all elements that pass the test defined by the given function 
+// const words = ['HTML','CSS','JS','ANGULAR','REACT'];
+// const filterwords = words.filter((item) => item.length > 4);
+// console.log(filterwords);
+
+// forEach : this method executes a provided function for each array element 
+// const words = ['HTML','CSS','JS','ANGULAR','REACT'];
+// console.log(words.forEach(item => console.log(item)))
+
+// map : this method creates a new array with the results of calling a function for every array element 
+// const numbers = [1,2,3,4,5]
+// const doubled = numbers.map((item) => item * 2 )
+// console.log(doubled)
+
+// find : this method returns the value of the first array element that satisifes the provided test function 
+// const numbers = [7,14,8,128,58]
+// const found = numbers.find(element => element > 10)
+// console.log(found)
+
+// findIndex : this method returns the index of the first array element that satisfies the provided test function or else returns - 1 
+// const numbers = [6,11,9,100,46]
+// const indexFound = numbers.findIndex(element => element > 15)
+// console.log(indexFound)
+
+// sort : this method sorts the items of array in a specific order (ascending or descending).
+// let cities = ['delhi','lucknow','banglore','mumbai']
+// let sortArray = cities.sort((a,b) => {
+// 	if(a>b) return 1
+// 	return -1;
+// })
+// console.log(sortArray)
+
+// concat : this method returns a new array by merging two or more values/arrays 
+// let fname = 'nitesh'
+// let lname = ' khatri'
+// let joinedname = fname.concat(lname)
+// console.log(joinedname)
+
+// JAVSACRIPT ARRAY METHODS: We can empty/resize the array using array.length. Checkout the example below
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+// console.log(numbers.length);
+// numbers.length = 5 
+// console.log(numbers);
+// numbers.length = 0 
+// console.log(numbers)
+
 // JAVSACRIPT ARRAY METHODS: 
 // const months = ['january','february','march','april']
 // const num = [10,5,100,53,6]
