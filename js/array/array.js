@@ -1,3 +1,5 @@
+
+
 // JAVSACRIPT ARRAY METHODS: Top 10 JavaScript Array methods Cheatsheet 
 // pop : this method removes the last element from an array and returns that element
 // let cities = ['delhi','lucknow','banglore','mumbai']
