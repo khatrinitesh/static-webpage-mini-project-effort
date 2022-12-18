@@ -1,4 +1,8 @@
-
+// JAVSACRIPT ARRAY METHODS: reduce()
+// const array = [10,20,30,20,30]
+// const numbers = [[1,2],[3,4],[5,6]]
+// const arraySum = numbers.reduce((acc,cum) => acc.concat(cum),[]);
+// console.log(arraySum);
 
 // JAVSACRIPT ARRAY METHODS: Top 10 JavaScript Array methods Cheatsheet 
 // pop : this method removes the last element from an array and returns that element
