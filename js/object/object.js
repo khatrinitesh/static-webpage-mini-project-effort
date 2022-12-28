@@ -1,4 +1,52 @@
+// OBJECT 5 
+// let hero = {
+//     powerLevel:99,
+//     getPower(){
+//         return this.powerLevel;
+//     }
+// }
+// let getPower = hero.getPower;
 
+// let hero2 = {
+//     powerLevel:42
+// }
+// console.log(getPower());
+// console.log(getPower.apply(hero));
+// console.log(getPower.apply(hero2));
+
+// OBJECT 4 
+// function Car(make,model,year){
+//     this.make = make;
+//     this.model = model;
+//     this.year =year;
+
+//     this.setMiles = function(miles){
+//         this.miles = miles
+//         return miles;
+//     }
+// }
+
+// const car1 = new Car('toyota','parius',2016);
+// const car2 = new Car('suzuki','parius1',2020);
+
+// Car.prototype.age = function(){
+//     return (new Date().getFullYear()) - this.year;
+// }
+
+// car1.age();
+
+
+
+// OBJECT 3
+// const user = {
+//     name:'nitesh',
+//     yearOfBirth:1989,
+//     calcAge:function(){
+//         const currentYear = (new Date()).getFullYear()
+//         return currentYear - this.yearOfBirth;
+//     }
+// }
+// console.log(user.calcAge());
 /*OBJECT 2*/
 // var bike = {
 //   name:'RX100',
