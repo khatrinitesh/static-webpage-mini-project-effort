@@ -1,3 +1,6 @@
+//**** 29TH DECEMBER 2022, THURSDAY  **** //
+// console.log(5>4>3);
+
 //**** 9TH OCTOBER 2022, SUNDAY **** //
 // function changeHead(id) {
 //   id.innerHTML = 'sameet khatri';
